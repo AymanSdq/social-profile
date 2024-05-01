@@ -1,5 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+
+:root{
+    --green-primary : hsl(75, 94%, 57%);
+    --white-neutral : hsl(0, 0%, 100%);
+    --grey-neutral : hsl(0, 0%, 20%);
+    --grey-dark : hsl(0, 0%, 12%);
+    --black-off : hsl(0, 0%, 8%);
+}
+
 .attribution { 
     font-size: 11px; text-align: center; 
+    color: white;
+    margin: 10px 0px;
 }
 
 .attribution a { 
@@ -8,4 +21,81 @@
 
 *{
     margin: 0;padding: 0;
+
+}
+
+body{
+    background-color: var(--black-off);
+    font-family: "Inter", sans-serif;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+p{
+    font-size: 14px;
+}
+
+.container-card{
+    width: 350px;
+    background-color: var(--grey-dark);
+    border-radius : 20px ;
+    padding: 35px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.card-image{
+    width: 100px;
+    border-radius: 50%;
+}
+
+.fullname-card{
+    color: white;
+}
+
+.location-card{
+    margin-bottom: 10px;
+    color: var(--green-primary);
+    font-weight: 600;
+}
+
+.car-info{
+    color: var(--white-neutral);
+}
+
+.social-media{
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.social-media a{
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    width: 100%;
+    padding: 15px 0px;
+    text-align: center;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: var(--grey-neutral);
+    transition: background 1s;
+}
+
+.social-media a:hover{
+    background-color: var(--green-primary);
+    color: var(--grey-dark);
 }
